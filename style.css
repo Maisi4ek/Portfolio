@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/als-sector');
+
+* {
+    margin: 0;
+}
+
+.textfont{
+    font-family: 'als-sector', sans-serif;
+    font-weight: bold;
+}
+
+.headingfont {
+    font-family: 'Inter';
+}
+
+section {
+    min-height: 100vh;
+}
+
+#main {
+    background-image: url(img/bgMAIN.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.maskot {
+    position: absolute;
+    display: flex;
+    width: 125px;
+}
+
+.window_header {
+    background-color: #D2D0F7;
+    padding: 15px 20px;
+    border: 2px, solid ;
+}
+
+.window_content {
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 2px, solid;
+    padding: 40px;
+    min-height: 230px;
+}
+
+
+.window {
+    border: 2px solid;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 70%;
+    max-width: 1500px;
+    box-shadow: 0 3px 0 0 #000000;
+}
+
+.button {
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 60px;
+    background: #BBFF2C;
+    color: #000000;
+    border: 2px, solid;
+    border-radius: 50px;
+    box-shadow: 0 5px #000000
+}

@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 * {
     margin: 0;
 }
 
 .textfont{
-    font-family: 'Comfortaa';
-    font-weight: bold;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 20px;
 }
 
-.headingfont {
+.buttonfont {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.headingfont {      
     font-family: 'Inter';
 }
 
@@ -21,6 +30,7 @@ section {
     background-image: url(img/bgMAIN.png);
     background-size: cover;
     background-position: center;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,15 +50,13 @@ section {
 .window_header {
     background-color: #D2D0F7;
     padding: 15px 20px;
-    border: 2px, solid ;
+    border-bottom: 2px solid;
 }
 
 .window_content {
     text-align: center;
     background-color: #FFFFFF;
-    border: 2px, solid;
     padding: 40px;
-    min-height: 230px;
 }
 
 
@@ -71,4 +79,91 @@ section {
     border: 2px, solid;
     border-radius: 50px;
     box-shadow: 0 5px #000000
+}
+
+.decoration {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation-name: jump;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes jump {
+    from{transform: translateY(0);}
+
+    to{transform: translateY(-100px);}
+}
+
+#about {
+    background-image: url(img/bgABOUT.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 100px 50px;
+}
+
+.about_heading {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 80px;
+    color: #FFFFFF;
+    text-shadow: 6px 4px #000000;
+    letter-spacing: 3px;
+}
+
+.about_container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    
+}
+
+.about_tab {
+    background-color: #792AFF;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.about_tabtext {
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.about_window {
+    position: relative;
+    width: 350px;
+    text-align: center;
+}
+
+.window_bg {
+    width: 100%;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.person {
+    width: 80%;
+    border-radius: 6px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.window_text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    width: 80%;
 }

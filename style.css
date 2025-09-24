@@ -97,6 +97,18 @@ section {
     to{transform: translateY(-100px);}
 }
 
+@keyframes cloudy {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
 #about {
     background-image: url(img/bgABOUT.png);
     background-size: cover;
@@ -166,4 +178,10 @@ section {
     transform: translateX(-50%);
     text-align: left;
     width: 80%;
+}
+
+.about_decor {
+    width: 190px;
+    animation: cloudy 4000ms;
+    animation-iteration-count: infinite;
 }

@@ -1,21 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 
 * {
     margin: 0;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 64px;
+    color: #BBFF2C;
+    position: absolute;
+    left: 60px;
+}
+
+.link {
+    height: 40px;
+    width: 112px;
+    border: #000000 solid 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: Comfortaa;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
 .textfont{
-    font-family: 'Montserrat';
+    font-family: 'Comfortaa';
     font-weight: 400;
     font-size: 20px;
 }
 
-.buttonfont {
-    font-family: 'Montserrat';
+.skills_text {
     font-weight: 700;
     font-size: 20px;
+    font: bold;
+    padding: 30px;
+}
+
+.buttonfont {
+    font-family: 'Comfortaa';
+    font-weight: 700;
+    font-size: 20px;
+    font: bolder;
 }
 
 .headingfont {      
@@ -131,8 +176,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 50px;
-    
 }
 
 .about_tab {
@@ -145,7 +188,7 @@ section {
 
 .about_tabtext {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
     color: #FFFFFF;
     margin-bottom: 20px;
 }
@@ -182,6 +225,79 @@ section {
 
 .about_decor {
     width: 190px;
-    animation: cloudy 4000ms;
-    animation-iteration-count: infinite;
+    animation: cloudy 4000ms infinite;
+}
+
+#skills {
+    background-image: url(img/bgSKILLS.png);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 50px;
+}
+
+.skills_heading {
+    font-size: 60px;
+    margin-bottom: 40px;
+    text-shadow: 4px 4px 0px black;
+}
+
+.skills_container {
+    display: flex;
+    justify-content: center;
+}
+
+.skills_window {
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 5px 5px 0px black;
+    overflow: hidden;
+}
+
+.skills_header {
+    background: #d4d4fb;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    border-bottom: 2px solid black;
+}
+
+.skills_header .dot {
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+.skills_header .red { background: #ff5f56; }
+.skills_header .yellow { background: #ffbd2e; }
+.skills_header .green { background: #27c93f; }
+
+.skills_icons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.skills_icons img {
+    width: 60px;
+    height: auto;
+}
+
+.skills_content .button {
+    background: #c4ff2e;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    box-shadow: 4px 4px 0px black;
+    display: inline-block;
+    margin-top: 20px;
+}
+.skills_content .button:hover {
+    transform: translateY(-3px);
 }

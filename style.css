@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -36,6 +40,11 @@ header {
     color: #000000;
     border-radius: 12px;
     background-color: #FFFFFF;
+}
+
+.active {
+    background-color: #792AFF;
+    color: #FFFFFF;
 }
 
 .menu {
@@ -283,14 +292,14 @@ section {
     margin: 40px;
 }
 
-.red { 
-    background: #FF6A00; 
+.red {
+    background: #FF6A00;
 }
-.yellow { 
-    background: #FFE603; 
+.yellow {
+    background: #FFE603;
 }
-.green { 
-    background: #04C800; 
+.green {
+    background: #04C800;
 }
 
 .skills_icons {
@@ -299,4 +308,38 @@ section {
     justify-content: center;
     gap: 40px;
     margin: 40px;
+}
+
+#works {
+    background-image: url(img/bgWORKS.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 40px;
+}
+
+.works_heading {
+    font-weight: 700;
+    font-size: 90px;
+    color: #FFFFFF;
+    text-shadow: 6px 4px #000000;
+    margin-bottom: 70px;
+}
+
+.works_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    max-width: 1600px;
+}
+
+.work_image {
+    width: 650px;
+    border-radius: 20px;
 }

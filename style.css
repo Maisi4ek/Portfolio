@@ -392,6 +392,7 @@ section {
     padding: 15px;
     width: 180px;
     box-shadow: 3px 4px 0px black;
+    transform: scale(1.3);
     text-align: left;
 }
 
@@ -401,14 +402,28 @@ section {
     margin-bottom: 10px;
 }
 
+.window_buttons {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.buttons {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid;
+}
+
 .comment {
     position: relative;
-    width: 260px;
+    width: 430px;
+    display: block;
 }
 
 .comment img {
-    width: 100%;
-    display: block;
+    width: 100%;  
 }
 
 .comment p {

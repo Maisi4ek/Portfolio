@@ -21,7 +21,7 @@
         <img src="img/maskot.png" alt="" class="maskot">
         <div class="window">
             <div class="window_header">
-                <img src="img/Group 101.png" alt="">
+                <img class="window_btn"   src="img/Group 101.png" alt="">
             </div>
             <div class="window_content">
                 <h1 class="headingfont name">КЛИМ ПОЛТАРЖИТСКИЙ</h1>
@@ -41,21 +41,26 @@
                 <p class="textfont about_tabtext">
                     Мне нравится создавать интересные и современные проекты.
                 </p>
-                <a href="" class="button buttonfont">Мои навыки</a>
+                <a href="" class="button textfont">Мои навыки</a>
             </div>
             <div class="about_window">
-                <img src="img/form2.png" alt="" class="window_bg">
-                <img src="img/photo.png" alt="" class="person">
-                <div class="window_text textfont">
-                    <p><b>Где живу:</b> Торонто</p>
-                    <p><b>Возраст:</b> 15</p>
-                    <p><b>Дата рождения:</b> 2010</p>
+                <div class="window_header">
+                    <div class="dots">
+                        <span class="dotAbout red"></span>
+                        <span class="dotAbout yellow"></span>
+                        <span class="dotAbout green"></span>
+                    </div>
+                </div>
+                <div class="window_content">
+                    <img src="img/photo.png" alt="" class="person">
+                    <p class="textfont"><b>Где живу:</b> Торонто</p>
+                    <p class="textfont"><b>Возраст:</b> 15</p>
+                    <p class="textfont"><b>Дата рождения:</b> 2010</p>
                 </div>
             </div>
         </div>
         <img src="img/cloud.png" alt="" class="about_decor">
-    </section>
-
+</section>
     <section id="skills">
         <h1 class="skills_heading headingfont">НАВЫКИ</h1>
         <div class="skills_container">
@@ -75,7 +80,7 @@
                     <a href="" class="skills_button button buttonfont">Смотреть работы</a>
                 </div>
             </div>
-    </div>
+        </div>
     </section>
     <section id="works">
         <h1 class="works_heading headingfont">РАБОТЫ</h1>
@@ -85,7 +90,43 @@
             <img src="img/weatherapp.png" alt="" class="work_image">
         </div>
     </section>
-    <section id="comments"></section>
+<section id="comments">
+  <h1 class="comments_heading headingfont">ОТЗЫВЫ</h1>
+  <div class="reviews">
+    <div class="profile">
+      <div class="profile_card">
+        <div class="window_buttons">
+          <span class="red"></span>
+          <span class="yellow"></span>
+          <span class="green"></span>
+        </div>
+        <img src="img/photo1.png" alt="Владимир">
+        <h3 class="textfont"><b>ВЛАДИМИР</b></h3>
+        <p class="textfont">Основатель Rocket Tech School</p>
+      </div>
+    </div>
+    <div class="comment">
+      <img src="img/comment.png" alt="bubble">
+      <p class="textfont">Он проходил обучение веб-разработке 4 месяца, и уже создает сложные сайты!</p>
+    </div>
+    <div class="profile">
+      <div class="profile_card">
+        <div class="window_buttons">
+          <span class="red"></span>
+          <span class="yellow"></span>
+          <span class="green"></span>
+        </div>
+        <img src="img/photo2.png" alt="Диана">
+        <h3 class="textfont"><b>ДИАНА</b></h3>
+        <p class="textfont">Product Lead Rocket Tech School</p>
+      </div>
+    </div>
+    <div class="comment">
+      <img src="img/comment.png" alt="bubble">
+      <p class="textfont">Очень хорошо пишет код. Отличная оптимизация сайта. Современно, стильно, молодежно!</p>
+    </div>
+  </div>
+</section>
     <script src="script.js"></script>
 </body>
 </html>

@@ -132,7 +132,8 @@ section {
     color: #000000;
     border: 2px, solid;
     border-radius: 50px;
-    box-shadow: 0 5px #000000
+    box-shadow: 0 5px #000000;
+    text-align: center;
 }
 
 .decoration {
@@ -185,6 +186,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
 .about_tab {
@@ -193,37 +196,52 @@ section {
     padding: 40px;
     max-width: 400px;
     text-align: center;
-    max-width: 700px;
-    height: 300px;
 }
 
 .about_tabtext {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     color: #FFFFFF;
     margin-bottom: 20px;
-    text-align: start;
 }
 
 .about_window {
-    position: relative;
+    background-color: #D2D0F7;
+    border-radius: 10px;
     width: 350px;
-    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
 
-.window_bg {
-    width: 100%;
-    flex-wrap: wrap;
-    border-radius: 10px;
+.window_header {
+    background-color: #D2D0F7;
+    padding: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+.dots {
+    display: flex;
+    gap: 6px;
+}
+
+.dotAbout {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid;
+}
+
+.window_content {
+    text-align: center;
+    padding: 20px;
 }
 
 .person {
-    width: 80%;
-    border-radius: 6px;
-    position: absolute;
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 .window_text {
@@ -342,4 +360,98 @@ section {
 .work_image {
     width: 650px;
     border-radius: 20px;
+}
+
+#comments {
+    background-image: url(img/bgCOMMENTS.png);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 50px;
+}
+
+.comments_heading {
+    font-weight: 700;
+    font-size: 90px;
+    color: #FFFFFF;
+    text-shadow: 6px 4px #000000;
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-top: 60px;
+}
+
+.profile_card {
+    background-color: #c8b8ff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 180px;
+    box-shadow: 3px 4px 0px black;
+    text-align: left;
+}
+
+.profile_card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.comment {
+    position: relative;
+    width: 260px;
+}
+
+.comment img {
+    width: 100%;
+    display: block;
+}
+
+.comment p {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+}
+
+
+@media (max-width: 1000px) {
+    .maskot {
+        transform: none;
+        width: 100px;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .textfont {
+        font-size: 14px;
+    }
+
+    .window_content {
+        padding: 20px 16px;
+    }
+
+    .window_btn {
+        height: 10px;
+    }
+
+    .window_header {
+        padding: 10px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 18px 26px;
+        min-width: 210px;
+    }
+
+    .decoration {
+        animation: none;
+    }
 }

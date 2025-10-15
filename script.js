@@ -10,7 +10,10 @@ window.addEventListener("scroll", function () {
         const sectionBottom = sectionTop + section.offsetHeight;
         if (sectionTop <= position && position < sectionBottom) {
             const index = sections.indexOf(section);
-            console.log(index);
+            const newActiveButton = buttons[index];
+            active.classList.remove("active");
+            newActiveButton.classList.add("active");
+            active = newActiveButton;
         }
     }
 })

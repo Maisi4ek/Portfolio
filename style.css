@@ -108,8 +108,7 @@ section {
 }
 
 .window_content {
-    background-color: #FFFFFF;
-    border: 1px solid black;
+    background-color: #D2D0F7;
     text-align: center;
     padding: 40px;
 }
@@ -474,6 +473,22 @@ section {
 
     .decoration {
         animation: none;
+    }
+
+    .about_tab {
+        margin: 35px;
+    }
+
+    .about_window {
+        max-width: 700px;
+    }
+
+    .comment_bubble {
+        max-width: 300px;
+    }
+
+    .comment_text {
+        font-size: 14px;
     }
 
     .menu {

@@ -352,12 +352,12 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: 30px;
     max-width: 1600px;
 }
 
 .work_image {
-    width: 650px;
+    width: 40%;
     border-radius: 20px;
 }
 
@@ -379,7 +379,7 @@ section {
 .reviews {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     gap: 60px;
     margin-top: 60px;
@@ -391,7 +391,6 @@ section {
     padding: 15px;
     width: 180px;
     box-shadow: 3px 4px 0px black;
-    transform: scale(1.3);
     text-align: left;
 }
 
@@ -419,6 +418,14 @@ section {
     position: relative;
     width: 430px;
     display: block;
+}
+
+.comment_group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
 }
 
 .comment img {
@@ -491,6 +498,10 @@ section {
         font-size: 14px;
     }
 
+    .comment_group {
+        flex-direction: column;
+    }
+
     .menu {
         display: none;
         flex-direction: column;
@@ -515,5 +526,14 @@ section {
 
     header {
         justify-content: flex-end;
+    }
+
+    .comment p {
+        right: 20%;
+        left: 20%;
+    }
+
+    .skills_heading, .about_heading, .works_heading, .skills_heading, .comments_heading {
+        font-size: 30px;
     }
 }

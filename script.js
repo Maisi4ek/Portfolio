@@ -8,7 +8,7 @@ window.addEventListener("scroll", function () {
     for (const section of sections) {
         const sectionTop = section.offsetTop;
         const sectionBottom = sectionTop + section.offsetHeight;
-        if (sectionTop <= position && position < sectionBottom) {
+        if (sectionTop <= position && position <= sectionBottom) {
             const index = sections.indexOf(section);
             const newActiveButton = buttons[index];
             active.classList.remove("active");
@@ -16,4 +16,11 @@ window.addEventListener("scroll", function () {
             active = newActiveButton;
         }
     }
+})
+
+const menu = document.querySelector(".menu");
+const menuControl = document.querySelector(".menu_control");
+
+menuControl.addEventListener('click', function () {
+    menu.classList.toggle("show");
 })

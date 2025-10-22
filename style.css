@@ -167,6 +167,7 @@ section {
 #about {
     background-image: url(img/bgABOUT.png);
     background-size: cover;
+    align-content: center;
     background-position: center;
     position: relative;
     padding: 100px 50px;
@@ -364,6 +365,7 @@ section {
 #comments {
     background-image: url(img/bgCOMMENTS.png);
     text-align: center;
+    align-content: center;
     background-size: cover;
     background-position: center;
     padding: 100px 50px;
